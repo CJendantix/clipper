@@ -1,0 +1,5 @@
+# Clang 22 doesn't work with scap at the time of writing.
+# This is a decent fallback for my systems, but not a catch-all.
+# I am not going to add a containerized build system for this.
+[env]
+LIBCLANG_PATH = { value = "/usr/lib/llvm21/lib", force = false }
